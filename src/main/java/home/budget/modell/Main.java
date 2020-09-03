@@ -10,6 +10,11 @@ public class Main {
         Transaction transactionOne = new Transaction("wydatek", "zakup laptopa F-RAM", 3599.00, dateOne);
         TransactionDAO transactionDAO = new TransactionDAO();
         transactionDAO.save(transactionOne);
+        transactionDAO.read(1L);
+        System.out.println(transactionOne);
+//        transactionOne.setAmount(3200.00);
+//        transactionDAO.update(transactionOne);
+        transactionDAO.delete(1L);
         transactionDAO.close();
     }
 }

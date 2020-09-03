@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class TransactionDAO {
 
-    private final String URL = "jdbc:mysql://localhost:3306/TransactionsIO?characterEncoding=utf8&serverTimezone=UTC&useSSL=false";
+    private final String URL = "jdbc:mysql://localhost:3306/TransactionsIO?characterEncoding=utf8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false";
     private final String USERNAME = "root";
     private final String PASSWORD = "root";
     private Connection connection;
